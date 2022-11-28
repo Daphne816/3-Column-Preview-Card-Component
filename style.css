@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/*Mobile 375 x 667*/
+
+:root{
+    --font-sans-serif: 'Lexend Deca', sans-serif;
+    --font-headings: 'Big Shoulders Display', cursive;
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+    /*Paragraphs*/
+    --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+    /*Background, Headings, Buttons*/
+    --clr-very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {font-size: 15px;
+      font-family: var(--font-sans-serif);
+      background-color: var(--clr-very-light-gray);
+      margin: 4rem 1rem;}
+
+section {padding: 2rem;}
+
+h1 {font-family: var(--font-headings);
+    color: var(--clr-very-light-gray);
+    font-size: 2em;}
+
+p {color: var(--clr-transparent-white);
+   line-height: 175%;}
+
+button {background-color: var(--clr-very-light-gray);
+        padding: .75rem 1.25rem;
+        border-width: medium;
+        border-style: solid;
+        border-radius: 1.5rem;
+        font-weight: bold;}
+
+#sedans {background-color: var(--clr-orange);}
+
+#sedans button {border-color: var(--clr-orange);
+                color: var(--clr-orange);}
+
+#sedans button:hover {border-color: var(--clr-transparent-white);
+                      color: var(--clr-transparent-white);
+                      background-color: var(--clr-orange);
+                      cursor: pointer;}
+
+#suvs {background-color: var(--clr-dark-cyan);}
+
+#suvs button {border-color: var(--clr-dark-cyan);
+              color: var(--clr-dark-cyan);}
+
+#suvs button:hover {border-color: var(--clr-transparent-white);
+                    color: var(--clr-transparent-white);
+                    background-color: var(--clr-dark-cyan);
+                    cursor: pointer;}
+
+#luxury {background-color: var(--clr-very-dark-cyan);}
+
+#luxury button {border-color: var(--clr-very-dark-cyan);
+                color: var(--clr-very-dark-cyan);}
+
+ #luxury button:hover {border-color: var(--clr-transparent-white);
+                       color: var(--clr-transparent-white);
+                       background-color: var(--clr-very-dark-cyan);
+                       cursor: pointer;}
+
+.attribution {font-size: 11px; text-align: center;
+              margin-block: .5rem;}
+.attribution a {color: hsl(228, 45%, 44%);}
+
+/*Desktop 1440 x 800*/
+@media (min-width: 1440px) {
+    body {height: 100vh;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;}
+    main {display: flex;
+          width: 815px;
+          margin-inline: auto;}
+    button {margin-top: 3rem;}
+}
